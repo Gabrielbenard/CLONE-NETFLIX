@@ -1,0 +1,101 @@
+/* o  "*" será todo o conteudo pradrão da pagina sem sua modificação aki no proprio css */ 
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box ;
+}
+/* DECLARANDO VARIAVEIS USANDO :root */
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+ /* ELEMENTOS BASICOS */
+body{
+    background-color: var(--preta);
+    font-family: 'Arial', Helvetica, sans-serif;
+    color: white;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black' , Helvetica, sans-serif ;
+    font-size: 40px; 
+    margin-left: 8px;
+}
+
+header .container{
+    display: flex; /* ALINHA OS ELEMENTOS DA COLUNA */ 
+    flex-direction: row; 
+    align-items: center; /* ajeita os elementos da linha no centro vertical */
+    justify-content: space-between; /* espaça entre as tags nesse caso entre a <h2> e <nav> */
+}
+
+header nav a{
+    text-decoration:none ;
+    color: violet;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: yellow;
+}
+
+/*ELEMENTOS BASICOS*/
+
+.filmeprincipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/shingekiimg.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start ;
+}
+
+.filmeprincipal  .descricao{
+    margin-bottom: 50px;
+
+}
+
+.titulo{
+    font-size:  50px;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50) ;
+    border: none;
+    color: white;
+    padding: 15px 30px; 
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.filmeprincipal .container{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top: 5px;
+}
